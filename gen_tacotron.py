@@ -1,6 +1,7 @@
 import argparse
 from pathlib import Path
 from typing import Tuple, Dict, Any
+import time
 
 import torch
 import numpy as np
@@ -117,6 +118,7 @@ if __name__ == '__main__':
     
     concatenated = np.zeros([0], dtype=np.single)
 
+    timestamp = int(time.time())
     for i, x in enumerate(texts, 1):
         print(f'\n| Generating {i}/{len(texts)}')
         x = cleaner(x)
@@ -136,15 +138,15 @@ if __name__ == '__main__':
                                      target=args.target,
                                      overlap=args.overlap,
                                      mu_law=voc_dsp.mu_law)
-            dsp.save_wav(wav, out_path / f'{wav_name}.wav')
+            dsp.save_wav(wav, out_path / f'{timestamp}-{wav_name}.wav')
         elif args.vocoder == 'griffinlim':
             wav = dsp.griffinlim(m)
-            dsp.save_wav(wav, out_path / f'{wav_name}.wav')            
+            dsp.save_wav(wav, out_path / f'{timestamp}-{wav_name}.wav')            
         if args.vocoder != 'melgan':
             wav = np.append(wav, np.zeros(int(22050*0.25), dtype=np.single))
             concatenated = np.append(concatenated, wav)
 
     if len(texts) > 1:
-        dsp.save_wav(concatenated, out_path / f'taco_{tts_k}k_{args.vocoder}-full.wav')
+        dsp.save_wav(concatenated, out_path / f'{timestamp}_taco_{tts_k}k_{args.vocoder}-full.wav')
 
     print('\n\nDone.\n')
