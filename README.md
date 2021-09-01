@@ -1,6 +1,6 @@
 # Pajlada TTS
 
-Stripped down fork of ForwardTacotron (https://github.com/as-ideas/ForwardTacotron) with pretrained weights for Pajlada's (https://github.com/pajlada) voice.
+Stripped down version of ForwardTacotron (https://github.com/as-ideas/ForwardTacotron) with pretrained weights for Pajlada's (https://github.com/pajlada) voice.
 
 ## ⚙️ Installation
 
@@ -21,9 +21,9 @@ pip install -r requirements.txt
 If you aren't going to use CUDA, you can install the smaller CPU only torch version from https://pytorch.org/get-started/locally/
 
 Get the pretrained weights and extract the checkpoints folder to the root where gen_tacotron.py is:
-```
+
 https://drive.google.com/file/d/13I_x2bU6rXTqqIe9Lj8lZyS5OaW5TId-/view
-```
+
 
 ## ❓ Examples 
 
@@ -42,7 +42,7 @@ Autoregressive models can get stuck in loops if you try to generate too tricky o
 ## Acknowlegements
 
 * [https://github.com/pajlada](https://github.com/pajlada)
-* [https://github.com/as-ideas/ForwardTacotron(https://github.com/as-ideas/ForwardTacotron)]
+* [https://github.com/as-ideas/ForwardTacotron](https://github.com/as-ideas/ForwardTacotron)
 * [https://github.com/keithito/tacotron](https://github.com/keithito/tacotron)
 * [https://github.com/fatchord/WaveRNN](https://github.com/fatchord/WaveRNN)
 
