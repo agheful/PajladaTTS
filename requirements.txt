@@ -1,0 +1,8 @@
+numpy==1.20
+librosa==0.8.1
+torch>=1.2.0
+phonemizer>=2.2
+PyYAML>=5.1
+soundfile
+unidecode
+inflect
