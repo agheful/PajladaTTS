@@ -21,9 +21,9 @@ pip install -r requirements.txt
 If you aren't going to use CUDA, you can install the smaller CPU only torch version from https://pytorch.org/get-started/locally/
 
 Get the pretrained weights and extract the checkpoints folder to the root where gen_tacotron.py is:
-```
+
 https://drive.google.com/file/d/13I_x2bU6rXTqqIe9Lj8lZyS5OaW5TId-/view
-```
+
 
 ## ❓ Examples 
 
