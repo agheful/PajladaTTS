@@ -42,7 +42,7 @@ Autoregressive models can get stuck in loops if you try to generate too tricky o
 ## Acknowlegements
 
 * [https://github.com/pajlada](https://github.com/pajlada)
-* [https://github.com/as-ideas/ForwardTacotron(https://github.com/as-ideas/ForwardTacotron)]
+* [https://github.com/as-ideas/ForwardTacotron](https://github.com/as-ideas/ForwardTacotron)
 * [https://github.com/keithito/tacotron](https://github.com/keithito/tacotron)
 * [https://github.com/fatchord/WaveRNN](https://github.com/fatchord/WaveRNN)
 
