@@ -1,6 +1,6 @@
 # Pajlada TTS
 
-Stripped down fork of ForwardTacotron (https://github.com/as-ideas/ForwardTacotron) with pretrained weights for Pajlada's (https://github.com/pajlada) voice.
+Stripped down version of ForwardTacotron (https://github.com/as-ideas/ForwardTacotron) with pretrained weights for Pajlada's (https://github.com/pajlada) voice.
 
 ## ⚙️ Installation
 
